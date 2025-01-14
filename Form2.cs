@@ -25,5 +25,10 @@ namespace Sub_City_Management
         {
 
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
