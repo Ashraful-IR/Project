@@ -198,11 +198,11 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
-            this.label5.Location = new System.Drawing.Point(325, 351);
+            this.label5.Location = new System.Drawing.Point(299, 351);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(435, 30);
+            this.label5.Size = new System.Drawing.Size(458, 30);
             this.label5.TabIndex = 12;
-            this.label5.Text = "Creat your Own World,By yoyr hand";
+            this.label5.Text = "Create your Own World, By yoyr hand";
             // 
             // pictureBox1
             // 
