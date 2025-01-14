@@ -53,11 +53,11 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(408, 527);
+            this.button1.Location = new System.Drawing.Point(406, 518);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 36);
+            this.button1.Size = new System.Drawing.Size(103, 37);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Register";
+            this.button1.Text = "Sign Up";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // panel1
