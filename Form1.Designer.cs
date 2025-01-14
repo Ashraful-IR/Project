@@ -146,6 +146,7 @@
             // Sbutton
             // 
             this.Sbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(243)))), ((int)(((byte)(224)))));
+            this.Sbutton.FlatAppearance.BorderSize = 0;
             this.Sbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Sbutton.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sbutton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));

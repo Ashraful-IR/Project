@@ -200,9 +200,9 @@
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
             this.label5.Location = new System.Drawing.Point(299, 351);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(458, 30);
+            this.label5.Size = new System.Drawing.Size(467, 30);
             this.label5.TabIndex = 12;
-            this.label5.Text = "Create your Own World, By yoyr hand";
+            this.label5.Text = "Create your Own World, By your hand.";
             // 
             // pictureBox1
             // 
