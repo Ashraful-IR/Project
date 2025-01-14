@@ -42,9 +42,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(243)))), ((int)(((byte)(224)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 572);
+            this.panel1.Location = new System.Drawing.Point(0, 575);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(906, 33);
+            this.panel1.Size = new System.Drawing.Size(906, 30);
             this.panel1.TabIndex = 2;
             // 
             // label3
