@@ -176,7 +176,7 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(108)))), ((int)(((byte)(45)))));
-            this.linkLabel1.Location = new System.Drawing.Point(324, 576);
+            this.linkLabel1.Location = new System.Drawing.Point(312, 576);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(69, 20);
             this.linkLabel1.TabIndex = 14;
