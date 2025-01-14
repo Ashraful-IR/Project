@@ -12,9 +12,18 @@ namespace Sub_City_Management
 {
     public partial class Form2 : Form
     {
+        public Form2()
+        {
+        }
+
         public Form2(int v)
         {
             InitializeComponent();
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

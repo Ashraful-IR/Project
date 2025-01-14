@@ -70,5 +70,16 @@ namespace Sub_City_Management
             }
 
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form2 f2 = new Form2();
+            f2.Show();
+        }
     }
 }
