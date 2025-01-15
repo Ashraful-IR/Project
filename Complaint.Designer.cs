@@ -178,9 +178,9 @@
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
             this.label14.Location = new System.Drawing.Point(42, 163);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(232, 29);
+            this.label14.Size = new System.Drawing.Size(247, 29);
             this.label14.TabIndex = 38;
-            this.label14.Text = "Complainat Details";
+            this.label14.Text = "Complainant Details";
             // 
             // label15
             // 
