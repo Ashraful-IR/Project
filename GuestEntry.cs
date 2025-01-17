@@ -16,5 +16,10 @@ namespace Sub_City_Management
         {
             InitializeComponent();
         }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
