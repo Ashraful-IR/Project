@@ -32,5 +32,23 @@ namespace Sub_City_Management
             
 
         }
+
+        private void MissionB_Click(object sender, EventArgs e)
+        {
+            Mission mission = new Mission();
+            mission.Show();
+        }
+
+        private void PurposeB_Click(object sender, EventArgs e)
+        {
+            Purpose purpose = new Purpose();
+            purpose.Show();
+        }
+
+        private void BackB_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            form4.Show();
+        }
     }
 }

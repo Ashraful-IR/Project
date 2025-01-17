@@ -39,8 +39,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.ForwardB = new System.Windows.Forms.Button();
+            this.Backb = new System.Windows.Forms.Button();
             this.ExitB = new System.Windows.Forms.Button();
             this.HomeB = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -153,33 +153,35 @@
             this.pictureBox1.TabIndex = 150;
             this.pictureBox1.TabStop = false;
             // 
-            // button6
+            // ForwardB
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(243)))), ((int)(((byte)(224)))));
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(855, 0);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(39, 36);
-            this.button6.TabIndex = 148;
-            this.button6.UseVisualStyleBackColor = false;
+            this.ForwardB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(243)))), ((int)(((byte)(224)))));
+            this.ForwardB.FlatAppearance.BorderSize = 0;
+            this.ForwardB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ForwardB.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForwardB.ForeColor = System.Drawing.Color.White;
+            this.ForwardB.Image = ((System.Drawing.Image)(resources.GetObject("ForwardB.Image")));
+            this.ForwardB.Location = new System.Drawing.Point(855, 0);
+            this.ForwardB.Name = "ForwardB";
+            this.ForwardB.Size = new System.Drawing.Size(39, 36);
+            this.ForwardB.TabIndex = 148;
+            this.ForwardB.UseVisualStyleBackColor = false;
+            this.ForwardB.Click += new System.EventHandler(this.ForwardB_Click);
             // 
-            // button5
+            // Backb
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(243)))), ((int)(((byte)(224)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(6, 0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(39, 36);
-            this.button5.TabIndex = 147;
-            this.button5.UseVisualStyleBackColor = false;
+            this.Backb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(243)))), ((int)(((byte)(224)))));
+            this.Backb.FlatAppearance.BorderSize = 0;
+            this.Backb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Backb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Backb.ForeColor = System.Drawing.Color.White;
+            this.Backb.Image = ((System.Drawing.Image)(resources.GetObject("Backb.Image")));
+            this.Backb.Location = new System.Drawing.Point(6, 0);
+            this.Backb.Name = "Backb";
+            this.Backb.Size = new System.Drawing.Size(39, 36);
+            this.Backb.TabIndex = 147;
+            this.Backb.UseVisualStyleBackColor = false;
+            this.Backb.Click += new System.EventHandler(this.Backb_Click);
             // 
             // ExitB
             // 
@@ -238,8 +240,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.ForwardB);
+            this.Controls.Add(this.Backb);
             this.Controls.Add(this.ExitB);
             this.Controls.Add(this.HomeB);
             this.Controls.Add(this.label5);
@@ -265,8 +267,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button ForwardB;
+        private System.Windows.Forms.Button Backb;
         private System.Windows.Forms.Button ExitB;
         private System.Windows.Forms.Button HomeB;
         private System.Windows.Forms.Label label5;

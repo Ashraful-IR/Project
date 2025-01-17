@@ -32,5 +32,14 @@ namespace Sub_City_Management
             
 
         }
+
+        
+         private void BackB_Click(object sender, EventArgs e)
+        {
+            Mission mission = new Mission();
+            mission.Show();
+        }
+        
+        
     }
 }

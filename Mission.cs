@@ -32,5 +32,17 @@ namespace Sub_City_Management
             
 
         }
+
+        private void Backb_Click(object sender, EventArgs e)
+        {
+            AboutUs aboutUs = new AboutUs();
+            aboutUs.Show();
+        }
+
+        private void ForwardB_Click(object sender, EventArgs e)
+        {
+            Purpose purpose = new Purpose();
+            purpose.Show();
+        }
     }
 }

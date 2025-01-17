@@ -32,12 +32,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.ForwardB = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.BackB = new System.Windows.Forms.Button();
             this.ExitB = new System.Windows.Forms.Button();
             this.HomeB = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.MissionB = new System.Windows.Forms.Button();
+            this.PurposeB = new System.Windows.Forms.Button();
+            this.ContactB = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -76,19 +76,20 @@
             this.ForwardB.TabIndex = 120;
             this.ForwardB.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // BackB
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(243)))), ((int)(((byte)(224)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(12, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(39, 36);
-            this.button5.TabIndex = 119;
-            this.button5.UseVisualStyleBackColor = false;
+            this.BackB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(243)))), ((int)(((byte)(224)))));
+            this.BackB.FlatAppearance.BorderSize = 0;
+            this.BackB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BackB.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackB.ForeColor = System.Drawing.Color.White;
+            this.BackB.Image = ((System.Drawing.Image)(resources.GetObject("BackB.Image")));
+            this.BackB.Location = new System.Drawing.Point(12, 2);
+            this.BackB.Name = "BackB";
+            this.BackB.Size = new System.Drawing.Size(39, 36);
+            this.BackB.TabIndex = 119;
+            this.BackB.UseVisualStyleBackColor = false;
+            this.BackB.Click += new System.EventHandler(this.BackB_Click);
             // 
             // ExitB
             // 
@@ -120,47 +121,49 @@
             this.HomeB.UseVisualStyleBackColor = false;
             this.HomeB.Click += new System.EventHandler(this.HomeB_Click);
             // 
-            // button1
+            // MissionB
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(99, 198);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(211, 166);
-            this.button1.TabIndex = 122;
-            this.button1.Text = "Mission and Vision";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.MissionB.FlatAppearance.BorderSize = 0;
+            this.MissionB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MissionB.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MissionB.Image = ((System.Drawing.Image)(resources.GetObject("MissionB.Image")));
+            this.MissionB.Location = new System.Drawing.Point(99, 198);
+            this.MissionB.Name = "MissionB";
+            this.MissionB.Size = new System.Drawing.Size(211, 166);
+            this.MissionB.TabIndex = 122;
+            this.MissionB.Text = "Mission and Vision";
+            this.MissionB.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.MissionB.UseVisualStyleBackColor = true;
+            this.MissionB.Click += new System.EventHandler(this.MissionB_Click);
             // 
-            // button2
+            // PurposeB
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(345, 141);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(211, 166);
-            this.button2.TabIndex = 123;
-            this.button2.Text = "Purpose and Objectives";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.PurposeB.FlatAppearance.BorderSize = 0;
+            this.PurposeB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PurposeB.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PurposeB.Image = ((System.Drawing.Image)(resources.GetObject("PurposeB.Image")));
+            this.PurposeB.Location = new System.Drawing.Point(345, 141);
+            this.PurposeB.Name = "PurposeB";
+            this.PurposeB.Size = new System.Drawing.Size(211, 166);
+            this.PurposeB.TabIndex = 123;
+            this.PurposeB.Text = "Purpose and Objectives";
+            this.PurposeB.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.PurposeB.UseVisualStyleBackColor = true;
+            this.PurposeB.Click += new System.EventHandler(this.PurposeB_Click);
             // 
-            // button7
+            // ContactB
             // 
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.Location = new System.Drawing.Point(591, 198);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(211, 133);
-            this.button7.TabIndex = 124;
-            this.button7.Text = "Contact Us";
-            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button7.UseVisualStyleBackColor = true;
+            this.ContactB.FlatAppearance.BorderSize = 0;
+            this.ContactB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ContactB.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ContactB.Image = ((System.Drawing.Image)(resources.GetObject("ContactB.Image")));
+            this.ContactB.Location = new System.Drawing.Point(591, 198);
+            this.ContactB.Name = "ContactB";
+            this.ContactB.Size = new System.Drawing.Size(211, 133);
+            this.ContactB.TabIndex = 124;
+            this.ContactB.Text = "Contact Us";
+            this.ContactB.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.ContactB.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -179,11 +182,11 @@
             this.ClientSize = new System.Drawing.Size(906, 605);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ContactB);
+            this.Controls.Add(this.PurposeB);
+            this.Controls.Add(this.MissionB);
             this.Controls.Add(this.ForwardB);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.BackB);
             this.Controls.Add(this.ExitB);
             this.Controls.Add(this.HomeB);
             this.Controls.Add(this.label5);
@@ -200,13 +203,13 @@
         #endregion
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button ForwardB;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button BackB;
         private System.Windows.Forms.Button ExitB;
         private System.Windows.Forms.Button HomeB;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button MissionB;
+        private System.Windows.Forms.Button PurposeB;
+        private System.Windows.Forms.Button ContactB;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
