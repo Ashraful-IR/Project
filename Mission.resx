@@ -121,7 +121,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA3oAAACcCAYAAAApptl6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAJuxJREFUeF7tnQnYLFV9p0e4sgpiA4I6RmVcnhvRaEQ/H4iKGjdu0MRPcItoTGJm
+        vwAADr8BOAVTJAAAJuxJREFUeF7tnQnYLFV9p0e4sgpiA4I6RmVcnhvRaEQ/H4iKGjdu0MRPcItoTGJm
         3CIuUeJV47iAGTccNaACccMkRp1EXGY0AyMu+DhqxMgk4IjLqBBFUPDKZpz3fP773r51T39fdXdV1/a+
         z/M+9+tazjl1qupU/251d/076QZ3utOdjjrmmGN+sYBXrays3DuKaxW0bWv8KSIiIiIiMhwqCHrJVoY9
         2vXx+FNERERERGQ4EPSOLIS2eb2yTWFvNBrdhDb9OP0bk0RERERERIZBRXf0xqY7e/eJohuF7ToktYl/
@@ -324,7 +324,7 @@
         3tWWQjx7tgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="button4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ExitB.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAAgtJREFUWEftl7tKXFEUhgcv4AUV8UYsvIEKgjZi4SOEmBRaiJU2voA+gCQhiqCC
@@ -339,7 +339,7 @@
         XXtrLlUAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="HomeB.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAAoRJREFUWEftlj1oFFEUhZcN0ciuKYxIiMH/X7BJohBBC8VCoyKCSDQqpEgaISQ2

@@ -16,5 +16,21 @@ namespace Sub_City_Management
         {
             InitializeComponent();
         }
+
+        private void HomeB_Click(object sender, EventArgs e)
+        {
+           
+            Form4 form4 = new Form4();
+            form4.Show();
+
+        }
+
+        private void ExitB_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+            
+
+        }
     }
 }

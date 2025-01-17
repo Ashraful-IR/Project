@@ -44,7 +44,8 @@ namespace Sub_City_Management
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            Form4 f4 = new Form4();
+            f4.Show();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -55,6 +56,35 @@ namespace Sub_City_Management
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Complaint CP = new Complaint();
+            CP.Show();
+        }
+
+        private void GEbutto_Click(object sender, EventArgs e)
+        {
+            GuestEntry guestEntry = new GuestEntry();
+            guestEntry.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AboutUs aboutUs = new AboutUs();
+            aboutUs.Show();
+        }
+
+        private void BackB_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void ExitB_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
         }
     }
 }
