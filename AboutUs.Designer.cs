@@ -46,9 +46,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 541);
+            this.panel1.Location = new System.Drawing.Point(0, 580);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(890, 25);
+            this.panel1.Size = new System.Drawing.Size(906, 25);
             this.panel1.TabIndex = 121;
             // 
             // label5
@@ -70,7 +70,7 @@
             this.button6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(839, 2);
+            this.button6.Location = new System.Drawing.Point(855, 2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(39, 36);
             this.button6.TabIndex = 120;
@@ -112,7 +112,7 @@
             this.button3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(794, 2);
+            this.button3.Location = new System.Drawing.Point(810, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(39, 36);
             this.button3.TabIndex = 117;
@@ -163,9 +163,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 387);
+            this.pictureBox1.Location = new System.Drawing.Point(9, 428);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(890, 156);
+            this.pictureBox1.Size = new System.Drawing.Size(894, 156);
             this.pictureBox1.TabIndex = 125;
             this.pictureBox1.TabStop = false;
             // 
@@ -174,12 +174,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(243)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(890, 566);
+            this.ClientSize = new System.Drawing.Size(906, 605);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
