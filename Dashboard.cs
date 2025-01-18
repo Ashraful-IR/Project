@@ -70,6 +70,7 @@ namespace Sub_City_Management
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Application.Exit();
             AddControls(new Home());
         }
     }

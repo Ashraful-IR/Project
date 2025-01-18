@@ -25,8 +25,7 @@ namespace Sub_City_Management
         private void HomeB_Click(object sender, EventArgs e)
         {
          
-            Form4 form4 = new Form4();
-            form4.Show();
+            
 
         }
 
@@ -40,8 +39,7 @@ namespace Sub_City_Management
 
         private void BackB_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4();
-            form4.Show();
+           
         }
 
         private void GuestEntry_Load(object sender, EventArgs e)

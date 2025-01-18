@@ -23,8 +23,7 @@ namespace Sub_City_Management
 
         private void HomeB_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4();
-            form4.Show();
+            
         }
 
         private void ExitB_Click(object sender, EventArgs e)
@@ -68,6 +67,11 @@ namespace Sub_City_Management
         {
             Form1 form1 = new Form1();
             form1.Show();
+        }
+
+        private void SignUp_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

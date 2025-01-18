@@ -24,14 +24,18 @@ namespace Sub_City_Management
 
         private void HomeB_Click_1(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4();
-            form4.Show();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Form1 form1 = new Form1();
             form1.Show();
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -29,8 +29,7 @@ namespace Sub_City_Management
 
         private void HomeB_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4();
-            form4.Show();
+            
 
         }
 
@@ -43,11 +42,15 @@ namespace Sub_City_Management
 
         private void BackB_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4();
-            form4.Show();
+            
         }
 
         private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Complaint_Load(object sender, EventArgs e)
         {
 
         }

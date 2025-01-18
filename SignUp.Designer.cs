@@ -39,8 +39,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.BackB = new System.Windows.Forms.Button();
-            this.ExitB = new System.Windows.Forms.Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.FNBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.EBox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -50,6 +48,8 @@
             this.HABox = new Guna.UI2.WinForms.Guna2TextBox();
             this.SignUpL = new System.Windows.Forms.LinkLabel();
             this.label10 = new System.Windows.Forms.Label();
+            this.BackB = new System.Windows.Forms.Button();
+            this.ExitB = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panel1
@@ -160,36 +160,6 @@
             this.label1.Size = new System.Drawing.Size(89, 20);
             this.label1.TabIndex = 152;
             this.label1.Text = "Full name:";
-            // 
-            // BackB
-            // 
-            this.BackB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(243)))), ((int)(((byte)(224)))));
-            this.BackB.FlatAppearance.BorderSize = 0;
-            this.BackB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BackB.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BackB.ForeColor = System.Drawing.Color.White;
-            this.BackB.Image = ((System.Drawing.Image)(resources.GetObject("BackB.Image")));
-            this.BackB.Location = new System.Drawing.Point(5, 538);
-            this.BackB.Name = "BackB";
-            this.BackB.Size = new System.Drawing.Size(39, 36);
-            this.BackB.TabIndex = 169;
-            this.BackB.UseVisualStyleBackColor = false;
-            this.BackB.Click += new System.EventHandler(this.BackB_Click);
-            // 
-            // ExitB
-            // 
-            this.ExitB.FlatAppearance.BorderSize = 0;
-            this.ExitB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ExitB.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExitB.ForeColor = System.Drawing.Color.Black;
-            this.ExitB.Image = ((System.Drawing.Image)(resources.GetObject("ExitB.Image")));
-            this.ExitB.Location = new System.Drawing.Point(847, 533);
-            this.ExitB.Name = "ExitB";
-            this.ExitB.Size = new System.Drawing.Size(47, 41);
-            this.ExitB.TabIndex = 168;
-            this.ExitB.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ExitB.UseVisualStyleBackColor = true;
-            this.ExitB.Click += new System.EventHandler(this.ExitB_Click);
             // 
             // guna2Button1
             // 
@@ -375,6 +345,36 @@
             this.label10.TabIndex = 177;
             this.label10.Text = "Already Have An Account?";
             // 
+            // BackB
+            // 
+            this.BackB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(243)))), ((int)(((byte)(224)))));
+            this.BackB.FlatAppearance.BorderSize = 0;
+            this.BackB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BackB.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackB.ForeColor = System.Drawing.Color.White;
+            this.BackB.Image = ((System.Drawing.Image)(resources.GetObject("BackB.Image")));
+            this.BackB.Location = new System.Drawing.Point(5, 538);
+            this.BackB.Name = "BackB";
+            this.BackB.Size = new System.Drawing.Size(39, 36);
+            this.BackB.TabIndex = 169;
+            this.BackB.UseVisualStyleBackColor = false;
+            this.BackB.Click += new System.EventHandler(this.BackB_Click);
+            // 
+            // ExitB
+            // 
+            this.ExitB.FlatAppearance.BorderSize = 0;
+            this.ExitB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExitB.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitB.ForeColor = System.Drawing.Color.Black;
+            this.ExitB.Image = ((System.Drawing.Image)(resources.GetObject("ExitB.Image")));
+            this.ExitB.Location = new System.Drawing.Point(847, 533);
+            this.ExitB.Name = "ExitB";
+            this.ExitB.Size = new System.Drawing.Size(47, 41);
+            this.ExitB.TabIndex = 168;
+            this.ExitB.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ExitB.UseVisualStyleBackColor = true;
+            this.ExitB.Click += new System.EventHandler(this.ExitB_Click);
+            // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -406,6 +406,7 @@
             this.Name = "SignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SignUp";
+            this.Load += new System.EventHandler(this.SignUp_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
