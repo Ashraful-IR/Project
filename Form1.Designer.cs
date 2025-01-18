@@ -77,6 +77,7 @@
             // 
             // SignInB
             // 
+            this.SignInB.AutoEllipsis = true;
             this.SignInB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.SignInB.FlatAppearance.BorderSize = 0;
             this.SignInB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
