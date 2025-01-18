@@ -16,5 +16,10 @@ namespace Sub_City_Management
         {
             InitializeComponent();
         }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
