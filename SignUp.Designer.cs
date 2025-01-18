@@ -166,6 +166,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(293, 27);
             this.textBox3.TabIndex = 156;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox2
             // 
@@ -233,6 +234,7 @@
             this.button1.TabIndex = 150;
             this.button1.Text = "Sign Up";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // BackB
             // 

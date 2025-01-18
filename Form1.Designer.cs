@@ -29,12 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.SignUpL = new System.Windows.Forms.LinkLabel();
             this.label8 = new System.Windows.Forms.Label();
-            this.Sbutton = new System.Windows.Forms.Button();
+            this.SignInB = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -44,46 +41,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.White;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(377, 557);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(39, 36);
-            this.button6.TabIndex = 75;
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.White;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(4, 557);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(39, 36);
-            this.button5.TabIndex = 74;
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(422, -20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(493, 644);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 61;
-            this.pictureBox1.TabStop = false;
             // 
             // SignUpL
             // 
@@ -113,19 +75,20 @@
             this.label8.TabIndex = 72;
             this.label8.Text = "Don\'t have any account?";
             // 
-            // Sbutton
+            // SignInB
             // 
-            this.Sbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Sbutton.FlatAppearance.BorderSize = 0;
-            this.Sbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Sbutton.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Sbutton.ForeColor = System.Drawing.Color.White;
-            this.Sbutton.Location = new System.Drawing.Point(40, 415);
-            this.Sbutton.Name = "Sbutton";
-            this.Sbutton.Size = new System.Drawing.Size(97, 33);
-            this.Sbutton.TabIndex = 71;
-            this.Sbutton.Text = "Sign In";
-            this.Sbutton.UseVisualStyleBackColor = false;
+            this.SignInB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.SignInB.FlatAppearance.BorderSize = 0;
+            this.SignInB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SignInB.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignInB.ForeColor = System.Drawing.Color.White;
+            this.SignInB.Location = new System.Drawing.Point(40, 415);
+            this.SignInB.Name = "SignInB";
+            this.SignInB.Size = new System.Drawing.Size(97, 33);
+            this.SignInB.TabIndex = 71;
+            this.SignInB.Text = "Sign In";
+            this.SignInB.UseVisualStyleBackColor = false;
+            this.SignInB.Click += new System.EventHandler(this.SignInB_Click);
             // 
             // textBox2
             // 
@@ -225,6 +188,44 @@
             this.label1.TabIndex = 62;
             this.label1.Text = "Bashundhara R/A";
             // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.White;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.Location = new System.Drawing.Point(377, 557);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(39, 36);
+            this.button6.TabIndex = 75;
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.White;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.Location = new System.Drawing.Point(4, 557);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(39, 36);
+            this.button5.TabIndex = 74;
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(422, -20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(493, 644);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 61;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -236,7 +237,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.SignUpL);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.Sbutton);
+            this.Controls.Add(this.SignInB);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox1);
@@ -247,7 +248,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -265,7 +266,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel SignUpL;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button Sbutton;
+        private System.Windows.Forms.Button SignInB;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox1;

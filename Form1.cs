@@ -28,5 +28,10 @@ namespace Sub_City_Management
             SignUp  signUp = new SignUp();
             signUp.Show();
         }
+
+        private void SignInB_Click(object sender, EventArgs e)
+        {
+        
+        }
     }
 }
