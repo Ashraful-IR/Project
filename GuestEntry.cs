@@ -43,5 +43,10 @@ namespace Sub_City_Management
             Form4 form4 = new Form4();
             form4.Show();
         }
+
+        private void GuestEntry_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

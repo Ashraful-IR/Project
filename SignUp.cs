@@ -29,8 +29,7 @@ namespace Sub_City_Management
 
         private void ExitB_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
-            form1.Show();
+           Application.Exit();
         }
 
         private void BackB_Click(object sender, EventArgs e)
@@ -45,12 +44,12 @@ namespace Sub_City_Management
             con.Open();
 
             SqlCommand cmd = new SqlCommand("Insert into SignUp  values (@FullName, @PhoneNumber, @Email, @HouseAddress, @Password, @ConfirmPassword)", con);
-            cmd.Parameters.AddWithValue("@FullName", textBox1.Text);
-            cmd.Parameters.AddWithValue("@Email", textBox2.Text);
-            cmd.Parameters.AddWithValue("@PhoneNumber", int.Parse(textBox3.Text));
-            cmd.Parameters.AddWithValue("@HouseAddress", textBox5.Text);
-            cmd.Parameters.AddWithValue("@Password", textBox7.Text);
-            cmd.Parameters.AddWithValue("@ConfirmPassword", textBox6.Text);
+            cmd.Parameters.AddWithValue("@FullName", FNBox.Text);
+            cmd.Parameters.AddWithValue("@Email", EBox.Text);
+            cmd.Parameters.AddWithValue("@PhoneNumber", int.Parse(PNBox.Text));
+            cmd.Parameters.AddWithValue("@HouseAddress", HABox.Text);
+            cmd.Parameters.AddWithValue("@Password", PBox.Text);
+            cmd.Parameters.AddWithValue("@ConfirmPassword", CPBox.Text);
 
             cmd.ExecuteNonQuery();
 
@@ -63,6 +62,12 @@ namespace Sub_City_Management
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void SignUpL_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
         }
     }
 }

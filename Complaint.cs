@@ -46,5 +46,10 @@ namespace Sub_City_Management
             Form4 form4 = new Form4();
             form4.Show();
         }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

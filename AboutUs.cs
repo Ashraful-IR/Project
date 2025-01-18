@@ -50,5 +50,10 @@ namespace Sub_City_Management
             Form4 form4 = new Form4();
             form4.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
