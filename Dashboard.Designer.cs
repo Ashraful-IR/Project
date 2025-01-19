@@ -31,12 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.ControlPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.ForwardB = new System.Windows.Forms.Button();
             this.HomeB = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.BackB = new System.Windows.Forms.Button();
             this.ExitB = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -45,13 +44,18 @@
             this.GEbutton = new System.Windows.Forms.Button();
             this.ComplaintB = new System.Windows.Forms.Button();
             this.DashB = new System.Windows.Forms.Button();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.ControlPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.Controlpanel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.ControlPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(192)))), ((int)(((byte)(167)))));
+            this.panel1.Controls.Add(this.guna2Panel1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.ForwardB);
             this.panel1.Controls.Add(this.HomeB);
@@ -70,15 +74,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(175, 605);
             this.panel1.TabIndex = 14;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 580);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(175, 25);
-            this.panel2.TabIndex = 94;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
@@ -90,14 +86,6 @@
             this.label1.Size = new System.Drawing.Size(131, 23);
             this.label1.TabIndex = 14;
             this.label1.Text = "Bashundhara";
-            // 
-            // ControlPanel
-            // 
-            this.ControlPanel.Location = new System.Drawing.Point(175, 0);
-            this.ControlPanel.Name = "ControlPanel";
-            this.ControlPanel.Size = new System.Drawing.Size(731, 605);
-            this.ControlPanel.TabIndex = 15;
-            this.ControlPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ControlPanel_Paint);
             // 
             // ForwardB
             // 
@@ -143,6 +131,15 @@
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 580);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(175, 25);
+            this.panel2.TabIndex = 94;
             // 
             // BackB
             // 
@@ -262,6 +259,30 @@
             this.DashB.UseVisualStyleBackColor = true;
             this.DashB.Click += new System.EventHandler(this.DashB_Click);
             // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Location = new System.Drawing.Point(175, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(731, 605);
+            this.guna2Panel1.TabIndex = 16;
+            // 
+            // ControlPanel
+            // 
+            this.ControlPanel.Controls.Add(this.Controlpanel1);
+            this.ControlPanel.Location = new System.Drawing.Point(175, 0);
+            this.ControlPanel.Name = "ControlPanel";
+            this.ControlPanel.Size = new System.Drawing.Size(731, 605);
+            this.ControlPanel.TabIndex = 15;
+            this.ControlPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ControlPanel_Paint);
+            // 
+            // Controlpanel1
+            // 
+            this.Controlpanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Controlpanel1.Location = new System.Drawing.Point(0, 0);
+            this.Controlpanel1.Name = "Controlpanel1";
+            this.Controlpanel1.Size = new System.Drawing.Size(731, 605);
+            this.Controlpanel1.TabIndex = 16;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -278,6 +299,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.ControlPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -296,9 +318,11 @@
         private System.Windows.Forms.Button ComplaintB;
         private System.Windows.Forms.Button DashB;
         private System.Windows.Forms.Button ExitB;
-        private Guna.UI2.WinForms.Guna2Panel ControlPanel;
         private System.Windows.Forms.Button HomeB;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel ControlPanel;
+        private Guna.UI2.WinForms.Guna2Panel Controlpanel1;
     }
 }

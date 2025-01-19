@@ -26,5 +26,10 @@ namespace Sub_City_Management
         {
 
         }
+
+        private void Status_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

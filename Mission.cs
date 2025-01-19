@@ -26,22 +26,30 @@ namespace Sub_City_Management
 
         private void ExitB_Click(object sender, EventArgs e)
         {
+            /*
             Form1 form1 = new Form1();
             form1.Show();
+            */
+            Application.Exit();
             
 
         }
 
         private void Backb_Click(object sender, EventArgs e)
         {
+            /*
             AboutUs aboutUs = new AboutUs();
             aboutUs.Show();
+            */
+            
         }
 
         private void ForwardB_Click(object sender, EventArgs e)
         {
+            /*
             Purpose purpose = new Purpose();
             purpose.Show();
+            */
         }
     }
 }

@@ -96,6 +96,7 @@
             this.Name = "Status";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Status";
+            this.Load += new System.EventHandler(this.Status_Load);
             this.ResumeLayout(false);
 
         }
