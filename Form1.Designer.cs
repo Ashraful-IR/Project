@@ -39,9 +39,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.SignIn = new Guna.UI2.WinForms.Guna2Button();
             this.PassBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.EmailBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.HomeB = new System.Windows.Forms.Button();
             this.PassCheck = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -164,24 +164,24 @@
             this.pictureBox1.TabIndex = 61;
             this.pictureBox1.TabStop = false;
             // 
-            // guna2Button1
+            // SignIn
             // 
-            this.guna2Button1.AutoRoundedCorners = true;
-            this.guna2Button1.BorderRadius = 16;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(134, 453);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.guna2Button1.Size = new System.Drawing.Size(106, 34);
-            this.guna2Button1.TabIndex = 76;
-            this.guna2Button1.Text = "Sign In";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.SignIn.AutoRoundedCorners = true;
+            this.SignIn.BorderRadius = 16;
+            this.SignIn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.SignIn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.SignIn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.SignIn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.SignIn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.SignIn.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignIn.ForeColor = System.Drawing.Color.White;
+            this.SignIn.Location = new System.Drawing.Point(134, 453);
+            this.SignIn.Name = "SignIn";
+            this.SignIn.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.SignIn.Size = new System.Drawing.Size(106, 34);
+            this.SignIn.TabIndex = 76;
+            this.SignIn.Text = "Sign In";
+            this.SignIn.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // PassBox
             // 
@@ -208,29 +208,31 @@
             this.PassBox.TabIndex = 77;
             this.PassBox.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
-            // guna2TextBox2
+            // EmailBox
             // 
-            this.guna2TextBox2.AutoRoundedCorners = true;
-            this.guna2TextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.guna2TextBox2.BorderRadius = 13;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(35, 304);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.guna2TextBox2.PlaceholderText = "abc@gmail.com";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(293, 29);
-            this.guna2TextBox2.TabIndex = 78;
+            this.EmailBox.AutoRoundedCorners = true;
+            this.EmailBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.EmailBox.BorderRadius = 13;
+            this.EmailBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.EmailBox.DefaultText = "";
+            this.EmailBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.EmailBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.EmailBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.EmailBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.EmailBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.EmailBox.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmailBox.ForeColor = System.Drawing.Color.Navy;
+            this.EmailBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.EmailBox.Location = new System.Drawing.Point(35, 304);
+            this.EmailBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EmailBox.Name = "EmailBox";
+            this.EmailBox.PasswordChar = '\0';
+            this.EmailBox.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.EmailBox.PlaceholderText = "abc@gmail.com";
+            this.EmailBox.SelectedText = "";
+            this.EmailBox.Size = new System.Drawing.Size(293, 29);
+            this.EmailBox.TabIndex = 78;
+            this.EmailBox.TextChanged += new System.EventHandler(this.EmailBox_TextChanged);
             // 
             // HomeB
             // 
@@ -268,9 +270,9 @@
             this.ClientSize = new System.Drawing.Size(906, 605);
             this.Controls.Add(this.PassCheck);
             this.Controls.Add(this.HomeB);
-            this.Controls.Add(this.guna2TextBox2);
+            this.Controls.Add(this.EmailBox);
             this.Controls.Add(this.PassBox);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.SignIn);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.SignUpL);
             this.Controls.Add(this.label8);
@@ -304,9 +306,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button SignIn;
         private Guna.UI2.WinForms.Guna2TextBox PassBox;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox EmailBox;
         private System.Windows.Forms.Button HomeB;
         private System.Windows.Forms.CheckBox PassCheck;
     }

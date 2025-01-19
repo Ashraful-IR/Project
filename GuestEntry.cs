@@ -1,57 +1,52 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.Sql;
-using System.Xml.Linq;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+
 namespace Sub_City_Management
 {
     public partial class GuestEntry : Form
     {
-        public GuestEntry()
+        private Dashboard _dashboard; // Reference to Dashboard
+
+        public GuestEntry(Dashboard dashboard)
         {
             InitializeComponent();
+            _dashboard = dashboard; // Store the Dashboard reference
         }
 
         private void textBox7_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void HomeB_Click(object sender, EventArgs e)
         {
-         
-            
-
         }
 
         private void ExitB_Click(object sender, EventArgs e)
         {
             Form1 form1 = new Form1();
             form1.Show();
-
-
         }
 
         private void BackB_Click(object sender, EventArgs e)
         {
-           
         }
 
         private void GuestEntry_Load(object sender, EventArgs e)
         {
-
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            // Ensure that the checkbox is checked before submitting
+            if (!CheckBox.Checked)
+            {
+                MessageBox.Show("Please check the checkbox to submit the form.");
+                return; // Prevent submission if checkbox is not checked
+            }
+
+            // SQL connection and insert operation to store data into GuestEntry table
             SqlConnection con = new SqlConnection("Data Source=ASHRAF\\SQLEXPRESS02;Initial Catalog=\"SubCity Management\";Integrated Security=True;");
             con.Open();
 
@@ -75,11 +70,18 @@ namespace Sub_City_Management
             cmd.ExecuteNonQuery();
             con.Close();
 
+            // Display success message
+            MessageBox.Show("SUBMITTED");
 
-            //MessageBox.Show("SUBMITED");
+            // Navigate to GESubmit page (if necessary)
+            // _dashboard.AddControls(new GESubmit());
+        }
 
-            GESubmit gESubmit = new GESubmit();
-            gESubmit.Show();
+        // Enable or disable the submit button based on checkbox state
+        private void CheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            // If checkbox is checked, enable the submit button, else disable it
+            Submit.Enabled = CheckBox.Checked;
         }
     }
 }

@@ -163,7 +163,7 @@
             this.ExitB.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExitB.ForeColor = System.Drawing.Color.Black;
             this.ExitB.Image = ((System.Drawing.Image)(resources.GetObject("ExitB.Image")));
-            this.ExitB.Location = new System.Drawing.Point(45, 541);
+            this.ExitB.Location = new System.Drawing.Point(45, 540);
             this.ExitB.Name = "ExitB";
             this.ExitB.Size = new System.Drawing.Size(38, 34);
             this.ExitB.TabIndex = 3;
@@ -221,7 +221,7 @@
             this.GEbutton.Image = ((System.Drawing.Image)(resources.GetObject("GEbutton.Image")));
             this.GEbutton.Location = new System.Drawing.Point(0, 327);
             this.GEbutton.Name = "GEbutton";
-            this.GEbutton.Size = new System.Drawing.Size(163, 46);
+            this.GEbutton.Size = new System.Drawing.Size(172, 46);
             this.GEbutton.TabIndex = 3;
             this.GEbutton.Text = "Guest Entry";
             this.GEbutton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -283,6 +283,7 @@
             this.Controlpanel1.Name = "Controlpanel1";
             this.Controlpanel1.Size = new System.Drawing.Size(731, 605);
             this.Controlpanel1.TabIndex = 16;
+            this.Controlpanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Controlpanel1_Paint);
             // 
             // Dashboard
             // 

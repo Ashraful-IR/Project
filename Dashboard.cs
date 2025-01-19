@@ -16,6 +16,18 @@ namespace Sub_City_Management
         {
             InitializeComponent();
         }
+        public void DisplayHomePanel()
+        {
+            // Clear any previous controls in the ControlPanel (if any)
+            ControlPanel.Controls.Clear();
+
+            // Create an instance of the Home form (or UserControl, depending on your design)
+            Home home = new Home(); // Replace with your actual home panel or form
+            home.Dock = DockStyle.Fill;  // Fill the available space within ControlPanel
+            home.TopLevel = false;       // Set to false as we are adding it as a control, not a new form
+            ControlPanel.Controls.Add(home); // Add the home panel to the main container
+            home.Show();  // Show the home panel
+        }
 
         // Method to load forms dynamically into the ControlPanel
         public void AddControls(Form f)
@@ -39,7 +51,11 @@ namespace Sub_City_Management
 
         private void GEbutton_Click(object sender, EventArgs e)
         {
-            AddControls(new GuestEntry());
+             //AddControls(new GuestEntry(this));
+
+            // Pass the current instance of Dashboard to GuestEntry
+            GuestEntry guestEntry = new GuestEntry(this);
+            AddControls(guestEntry);  // Add the GuestEntry form to the ControlPanel
         }
 
         private void AUbutton_Click(object sender, EventArgs e)
@@ -92,6 +108,11 @@ namespace Sub_City_Management
         }
 
         private void ForwardB_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Controlpanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

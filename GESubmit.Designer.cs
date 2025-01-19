@@ -34,7 +34,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.ExitB = new System.Windows.Forms.Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.HomeB = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
@@ -43,9 +42,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 580);
+            this.panel1.Location = new System.Drawing.Point(0, 561);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(906, 25);
+            this.panel1.Size = new System.Drawing.Size(731, 25);
             this.panel1.TabIndex = 132;
             // 
             // label2
@@ -54,7 +53,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(170, 307);
+            this.label2.Location = new System.Drawing.Point(68, 276);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(583, 23);
             this.label2.TabIndex = 130;
@@ -66,7 +65,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century", 100F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(131, 169);
+            this.label4.Location = new System.Drawing.Point(29, 138);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(674, 161);
             this.label4.TabIndex = 129;
@@ -95,20 +94,6 @@
             this.label1.TabIndex = 127;
             this.label1.Text = "Bashundhara R/A";
             // 
-            // ExitB
-            // 
-            this.ExitB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(243)))), ((int)(((byte)(224)))));
-            this.ExitB.FlatAppearance.BorderSize = 0;
-            this.ExitB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ExitB.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExitB.ForeColor = System.Drawing.Color.White;
-            this.ExitB.Image = ((System.Drawing.Image)(resources.GetObject("ExitB.Image")));
-            this.ExitB.Location = new System.Drawing.Point(855, 538);
-            this.ExitB.Name = "ExitB";
-            this.ExitB.Size = new System.Drawing.Size(39, 36);
-            this.ExitB.TabIndex = 133;
-            this.ExitB.UseVisualStyleBackColor = false;
-            // 
             // guna2Button1
             // 
             this.guna2Button1.AutoRoundedCorners = true;
@@ -121,9 +106,9 @@
             this.guna2Button1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.Location = new System.Drawing.Point(526, 393);
+            this.guna2Button1.Location = new System.Drawing.Point(408, 350);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(139, 45);
+            this.guna2Button1.Size = new System.Drawing.Size(185, 45);
             this.guna2Button1.TabIndex = 135;
             this.guna2Button1.Text = "Leave";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -140,7 +125,7 @@
             this.HomeB.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HomeB.ForeColor = System.Drawing.Color.White;
             this.HomeB.Image = ((System.Drawing.Image)(resources.GetObject("HomeB.Image")));
-            this.HomeB.Location = new System.Drawing.Point(226, 393);
+            this.HomeB.Location = new System.Drawing.Point(107, 350);
             this.HomeB.Name = "HomeB";
             this.HomeB.Size = new System.Drawing.Size(185, 45);
             this.HomeB.TabIndex = 134;
@@ -151,8 +136,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(243)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(906, 605);
-            this.Controls.Add(this.ExitB);
+            this.ClientSize = new System.Drawing.Size(731, 586);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
@@ -164,14 +148,13 @@
             this.Name = "GESubmit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GESubmit";
+            this.Load += new System.EventHandler(this.GESubmit_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button ExitB;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;

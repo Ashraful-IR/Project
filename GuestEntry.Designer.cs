@@ -46,7 +46,7 @@
             this.Arrival = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.Departure = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.Vehichle = new System.Windows.Forms.ComboBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.Submit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.GNames = new Guna.UI2.WinForms.Guna2TextBox();
@@ -316,24 +316,24 @@
             this.Vehichle.Size = new System.Drawing.Size(227, 21);
             this.Vehichle.TabIndex = 180;
             // 
-            // guna2Button1
+            // Submit
             // 
-            this.guna2Button1.AutoRoundedCorners = true;
-            this.guna2Button1.BorderRadius = 14;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.DarkGreen;
-            this.guna2Button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(285, 465);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.guna2Button1.Size = new System.Drawing.Size(151, 31);
-            this.guna2Button1.TabIndex = 182;
-            this.guna2Button1.Text = "Submit";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.Submit.AutoRoundedCorners = true;
+            this.Submit.BorderRadius = 14;
+            this.Submit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Submit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Submit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Submit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Submit.FillColor = System.Drawing.Color.DarkGreen;
+            this.Submit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Submit.ForeColor = System.Drawing.Color.White;
+            this.Submit.Location = new System.Drawing.Point(285, 465);
+            this.Submit.Name = "Submit";
+            this.Submit.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.Submit.Size = new System.Drawing.Size(151, 31);
+            this.Submit.TabIndex = 182;
+            this.Submit.Text = "Submit";
+            this.Submit.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2Button2
             // 
@@ -438,6 +438,7 @@
             this.CheckBox.UncheckedState.BorderRadius = 0;
             this.CheckBox.UncheckedState.BorderThickness = 0;
             this.CheckBox.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.CheckBox.CheckedChanged += new System.EventHandler(this.CheckBox_CheckedChanged);
             // 
             // GuestEntry
             // 
@@ -450,7 +451,7 @@
             this.Controls.Add(this.GNames);
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2Button2);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.Submit);
             this.Controls.Add(this.Vehichle);
             this.Controls.Add(this.Departure);
             this.Controls.Add(this.Arrival);
@@ -498,7 +499,7 @@
         private Guna.UI2.WinForms.Guna2DateTimePicker Arrival;
         private Guna.UI2.WinForms.Guna2DateTimePicker Departure;
         private System.Windows.Forms.ComboBox Vehichle;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button Submit;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2TextBox GNames;

@@ -32,6 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.AddB = new System.Windows.Forms.Button();
             this.SearchB = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // panel1
@@ -83,12 +84,31 @@
             this.SearchB.TabIndex = 209;
             this.SearchB.TextChanged += new System.EventHandler(this.SearchB_TextChanged);
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.guna2Button1.BorderRadius = 5;
+            this.guna2Button1.BorderThickness = 2;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(243)))), ((int)(((byte)(224)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Century", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.guna2Button1.Location = new System.Drawing.Point(377, 21);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(100, 28);
+            this.guna2Button1.TabIndex = 210;
+            this.guna2Button1.Text = "Search";
+            // 
             // Status
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(243)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(731, 605);
+            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.AddB);
             this.Controls.Add(this.SearchB);
             this.Controls.Add(this.panel1);
@@ -105,5 +125,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button AddB;
         private Guna.UI2.WinForms.Guna2TextBox SearchB;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
