@@ -199,6 +199,12 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
+    <Compile Include="GESubmit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GESubmit.Designer.cs">
+      <DependentUpon>GESubmit.cs</DependentUpon>
+    </Compile>
     <Compile Include="GuestEntry.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -231,6 +237,12 @@
     <Compile Include="SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="Status.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Status.Designer.cs">
+      <DependentUpon>Status.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AboutUs.resx">
       <DependentUpon>AboutUs.cs</DependentUpon>
     </EmbeddedResource>
@@ -245,6 +257,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GESubmit.resx">
+      <DependentUpon>GESubmit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GuestEntry.resx">
       <DependentUpon>GuestEntry.cs</DependentUpon>
@@ -270,6 +285,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Status.resx">
+      <DependentUpon>Status.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

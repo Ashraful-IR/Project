@@ -17,6 +17,15 @@ namespace Sub_City_Management
             InitializeComponent();
         }
 
+        public void AddControls(Form f)
+        {
+            ControlPanel.Controls.Clear();
+            f.Dock = DockStyle.Fill;
+            f.TopLevel = false;
+            ControlPanel.Controls.Add(f);
+            f.Show();
+
+        }
         private void HomeB_Click(object sender, EventArgs e)
         {
             
@@ -34,14 +43,12 @@ namespace Sub_City_Management
 
         private void MissionB_Click(object sender, EventArgs e)
         {
-            Mission mission = new Mission();
-            mission.Show();
+            //AddControls(new Mission());
         }
 
         private void PurposeB_Click(object sender, EventArgs e)
         {
-            Purpose purpose = new Purpose();
-            purpose.Show();
+            //AddControls(new Purpose());
         }
 
         private void BackB_Click(object sender, EventArgs e)
@@ -55,6 +62,11 @@ namespace Sub_City_Management
         }
 
         private void AboutUs_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

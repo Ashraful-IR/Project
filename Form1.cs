@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using Guna.UI2.WinForms;
 
 namespace Sub_City_Management
 {
@@ -47,6 +48,27 @@ namespace Sub_City_Management
         private void guna2Button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void HomeB_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        
+
+      
+
+        private void PassCheck_CheckedChanged(object sender, EventArgs e)
+        {
+            if (PassCheck.Checked )
+            {
+                PassBox.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                PassBox.UseSystemPasswordChar = true;
+            }
         }
     }
 }

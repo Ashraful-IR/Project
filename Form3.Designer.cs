@@ -33,10 +33,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.ExitB = new System.Windows.Forms.Button();
-            this.HomeB = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.HomeB = new Guna.UI2.WinForms.Guna2Button();
+            this.ExitB = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -56,7 +56,7 @@
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Century", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(108)))), ((int)(((byte)(45)))));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(203, 25);
@@ -88,44 +88,6 @@
             this.label2.Text = "Your Complain Has Been Submited To The Authority.";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // ExitB
-            // 
-            this.ExitB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(243)))), ((int)(((byte)(224)))));
-            this.ExitB.FlatAppearance.BorderSize = 0;
-            this.ExitB.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.ExitB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ExitB.Font = new System.Drawing.Font("Century", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExitB.ForeColor = System.Drawing.Color.Black;
-            this.ExitB.Image = ((System.Drawing.Image)(resources.GetObject("ExitB.Image")));
-            this.ExitB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ExitB.Location = new System.Drawing.Point(527, 380);
-            this.ExitB.Name = "ExitB";
-            this.ExitB.Size = new System.Drawing.Size(145, 44);
-            this.ExitB.TabIndex = 13;
-            this.ExitB.Text = "Leave";
-            this.ExitB.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ExitB.UseVisualStyleBackColor = false;
-            this.ExitB.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // HomeB
-            // 
-            this.HomeB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(243)))), ((int)(((byte)(224)))));
-            this.HomeB.FlatAppearance.BorderSize = 0;
-            this.HomeB.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.HomeB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.HomeB.Font = new System.Drawing.Font("Century", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HomeB.ForeColor = System.Drawing.Color.Black;
-            this.HomeB.Image = ((System.Drawing.Image)(resources.GetObject("HomeB.Image")));
-            this.HomeB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.HomeB.Location = new System.Drawing.Point(255, 380);
-            this.HomeB.Name = "HomeB";
-            this.HomeB.Size = new System.Drawing.Size(145, 44);
-            this.HomeB.TabIndex = 12;
-            this.HomeB.Text = "Home";
-            this.HomeB.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.HomeB.UseVisualStyleBackColor = false;
-            this.HomeB.Click += new System.EventHandler(this.HomeB_Click_1);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -135,19 +97,57 @@
             this.panel1.Size = new System.Drawing.Size(906, 25);
             this.panel1.TabIndex = 94;
             // 
-            // button6
+            // guna2Button1
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(243)))), ((int)(((byte)(224)))));
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(855, 538);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(39, 36);
-            this.button6.TabIndex = 124;
-            this.button6.UseVisualStyleBackColor = false;
+            this.guna2Button1.AutoRoundedCorners = true;
+            this.guna2Button1.BorderRadius = 21;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
+            this.guna2Button1.Location = new System.Drawing.Point(568, 419);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(121, 45);
+            this.guna2Button1.TabIndex = 126;
+            this.guna2Button1.Text = "Leave";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // HomeB
+            // 
+            this.HomeB.AutoRoundedCorners = true;
+            this.HomeB.BorderRadius = 21;
+            this.HomeB.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.HomeB.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.HomeB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.HomeB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.HomeB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.HomeB.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HomeB.ForeColor = System.Drawing.Color.White;
+            this.HomeB.Image = ((System.Drawing.Image)(resources.GetObject("HomeB.Image")));
+            this.HomeB.Location = new System.Drawing.Point(238, 419);
+            this.HomeB.Name = "HomeB";
+            this.HomeB.Size = new System.Drawing.Size(121, 45);
+            this.HomeB.TabIndex = 125;
+            this.HomeB.Text = "Home";
+            // 
+            // ExitB
+            // 
+            this.ExitB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(243)))), ((int)(((byte)(224)))));
+            this.ExitB.FlatAppearance.BorderSize = 0;
+            this.ExitB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExitB.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitB.ForeColor = System.Drawing.Color.White;
+            this.ExitB.Image = ((System.Drawing.Image)(resources.GetObject("ExitB.Image")));
+            this.ExitB.Location = new System.Drawing.Point(855, 538);
+            this.ExitB.Name = "ExitB";
+            this.ExitB.Size = new System.Drawing.Size(39, 36);
+            this.ExitB.TabIndex = 124;
+            this.ExitB.UseVisualStyleBackColor = false;
+            this.ExitB.Click += new System.EventHandler(this.ExitB_Click);
             // 
             // button2
             // 
@@ -173,10 +173,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(243)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(906, 605);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.ExitB);
+            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.HomeB);
+            this.Controls.Add(this.ExitB);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -184,7 +184,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form3";
+            this.Text = "0";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -198,8 +198,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button HomeB;
         private System.Windows.Forms.Button ExitB;
+        private Guna.UI2.WinForms.Guna2Button HomeB;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

@@ -37,5 +37,15 @@ namespace Sub_City_Management
         {
 
         }
+
+        private void ExitB_Click(object sender, EventArgs e)
+        {
+           // Application.Exit();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

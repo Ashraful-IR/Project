@@ -39,6 +39,7 @@ namespace Sub_City_Management
 
         private void button1_Click(object sender, EventArgs e)
         {
+            /*
             SqlConnection con = new SqlConnection("Data Source=ASHRAF\\SQLEXPRESS02;Initial Catalog=\"SubCity Management\";Integrated Security=True;");
             con.Open();
 
@@ -55,6 +56,7 @@ namespace Sub_City_Management
             con.Close();
 
             MessageBox.Show("Welcome to Bashundhara");
+            */
         }
 
 
@@ -71,6 +73,33 @@ namespace Sub_City_Management
 
         private void SignUp_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection("Data Source=ASHRAF\\SQLEXPRESS02;Initial Catalog=\"SubCity Management\";Integrated Security=True;");
+            con.Open();
+
+            SqlCommand cmd = new SqlCommand("Insert into SignUp  values (@FullName, @PhoneNumber, @Email, @HouseAddress, @Password, @ConfirmPassword)", con);
+            cmd.Parameters.AddWithValue("@FullName", FNBox.Text);
+            cmd.Parameters.AddWithValue("@Email", EBox.Text);
+            cmd.Parameters.AddWithValue("@PhoneNumber", int.Parse(PNBox.Text));
+            cmd.Parameters.AddWithValue("@HouseAddress", HABox.Text);
+            cmd.Parameters.AddWithValue("@Password", PBox.Text);
+            cmd.Parameters.AddWithValue("@ConfirmPassword", CPBox.Text);
+
+            cmd.ExecuteNonQuery();
+
+            con.Close();
+
+            
+            //MessageBox.Show("Welcome to Bashundhara");
+
+            /*
+            Form3 form3 = new Form3();
+            form3.Show();
+            */
 
         }
     }

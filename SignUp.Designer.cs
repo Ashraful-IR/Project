@@ -39,7 +39,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.SignupB = new Guna.UI2.WinForms.Guna2Button();
             this.FNBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.EBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.PNBox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -161,23 +161,24 @@
             this.label1.TabIndex = 152;
             this.label1.Text = "Full name:";
             // 
-            // guna2Button1
+            // SignupB
             // 
-            this.guna2Button1.AutoRoundedCorners = true;
-            this.guna2Button1.BorderRadius = 16;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(398, 396);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.guna2Button1.Size = new System.Drawing.Size(106, 34);
-            this.guna2Button1.TabIndex = 170;
-            this.guna2Button1.Text = "Sign In";
+            this.SignupB.AutoRoundedCorners = true;
+            this.SignupB.BorderRadius = 16;
+            this.SignupB.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.SignupB.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.SignupB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.SignupB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.SignupB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.SignupB.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignupB.ForeColor = System.Drawing.Color.White;
+            this.SignupB.Location = new System.Drawing.Point(398, 396);
+            this.SignupB.Name = "SignupB";
+            this.SignupB.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.SignupB.Size = new System.Drawing.Size(106, 34);
+            this.SignupB.TabIndex = 170;
+            this.SignupB.Text = "Sign Up";
+            this.SignupB.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // FNBox
             // 
@@ -389,7 +390,7 @@
             this.Controls.Add(this.PNBox);
             this.Controls.Add(this.EBox);
             this.Controls.Add(this.FNBox);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.SignupB);
             this.Controls.Add(this.BackB);
             this.Controls.Add(this.ExitB);
             this.Controls.Add(this.panel1);
@@ -425,7 +426,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button SignupB;
         private Guna.UI2.WinForms.Guna2TextBox FNBox;
         private Guna.UI2.WinForms.Guna2TextBox EBox;
         private Guna.UI2.WinForms.Guna2TextBox PNBox;

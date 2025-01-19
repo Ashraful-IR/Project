@@ -35,6 +35,7 @@
             this.ContactB = new System.Windows.Forms.Button();
             this.PurposeB = new System.Windows.Forms.Button();
             this.MissionB = new System.Windows.Forms.Button();
+            this.ControlPanel = new Guna.UI2.WinForms.Guna2Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,6 +113,14 @@
             this.MissionB.UseVisualStyleBackColor = true;
             this.MissionB.Click += new System.EventHandler(this.MissionB_Click);
             // 
+            // ControlPanel
+            // 
+            this.ControlPanel.Location = new System.Drawing.Point(0, -3);
+            this.ControlPanel.Name = "ControlPanel";
+            this.ControlPanel.Size = new System.Drawing.Size(731, 586);
+            this.ControlPanel.TabIndex = 126;
+            this.ControlPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            // 
             // AboutUs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -124,6 +133,7 @@
             this.Controls.Add(this.PurposeB);
             this.Controls.Add(this.MissionB);
             this.Controls.Add(this.label5);
+            this.Controls.Add(this.ControlPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AboutUs";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -142,5 +152,6 @@
         private System.Windows.Forms.Button PurposeB;
         private System.Windows.Forms.Button ContactB;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Guna.UI2.WinForms.Guna2Panel ControlPanel;
     }
 }
