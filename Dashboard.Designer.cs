@@ -100,6 +100,7 @@
             this.ForwardB.Size = new System.Drawing.Size(39, 36);
             this.ForwardB.TabIndex = 150;
             this.ForwardB.UseVisualStyleBackColor = false;
+            this.ForwardB.Click += new System.EventHandler(this.ForwardB_Click);
             // 
             // HomeB
             // 

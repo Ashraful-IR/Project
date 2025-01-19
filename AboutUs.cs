@@ -73,5 +73,10 @@ namespace Sub_City_Management
         {
             // Handle paint events for the panel if necessary
         }
+
+        private void ContactB_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("HotLine Number: 00995687");
+        }
     }
 }

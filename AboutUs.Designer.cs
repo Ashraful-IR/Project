@@ -82,6 +82,7 @@
             this.ContactB.Text = "Contact Us";
             this.ContactB.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.ContactB.UseVisualStyleBackColor = true;
+            this.ContactB.Click += new System.EventHandler(this.ContactB_Click);
             // 
             // PurposeB
             // 

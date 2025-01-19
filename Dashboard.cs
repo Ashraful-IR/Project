@@ -1,4 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Sub_City_Management
@@ -60,9 +67,13 @@ namespace Sub_City_Management
 
         private void HomeB_Click(object sender, EventArgs e)
         {
-            //AddControls(new Home());
+            /*AddControls(new Home());
             Form1 form1 =new Form1();
             form1.Show();
+            */
+            Form1 form1 = new Form1(); // Navigate to login screen
+            form1.Show();
+            //this.Close(); // Close the current form
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -78,6 +89,11 @@ namespace Sub_City_Management
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             // Optional: Handle panel paint events
+        }
+
+        private void ForwardB_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
