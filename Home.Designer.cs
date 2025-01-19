@@ -78,7 +78,7 @@
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(-1, 0);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(733, 603);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(733, 611);
             this.guna2PictureBox1.TabIndex = 16;
             this.guna2PictureBox1.TabStop = false;
             // 
