@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Sub_City_Management
@@ -27,7 +22,115 @@ namespace Sub_City_Management
 
         private void SearchB_TextChanged(object sender, EventArgs e)
         {
-            // Add search functionality here if needed
+            // Create a new context menu with options based on the input
+            ContextMenuStrip menu = new ContextMenuStrip();
+
+            // Check if the entered text is a valid Guest ID or Complaint ID
+            string searchText = SearchB.Text.Trim();
+            if (!string.IsNullOrEmpty(searchText))
+            {
+                // Check if the text is numeric, then offer both options (Guest ID or Complaint ID)
+                if (int.TryParse(searchText, out _))
+                {
+                    ToolStripMenuItem guestEntryOption = new ToolStripMenuItem("Search by Guest ID");
+                    guestEntryOption.Click += (s, args) => ShowGuestInfo(searchText);
+                    menu.Items.Add(guestEntryOption);
+
+                    ToolStripMenuItem complaintEntryOption = new ToolStripMenuItem("Search by Complaint ID");
+                    complaintEntryOption.Click += (s, args) => ShowComplaintInfo(searchText);
+                    menu.Items.Add(complaintEntryOption);
+                }
+                else
+                {
+                    MessageBox.Show("Please enter a valid ID (Guest ID or Complaint ID).", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+                // Show the context menu below the SearchB TextBox
+                menu.Show(SearchB, new Point(0, SearchB.Height));
+            }
+        }
+
+        private void ShowGuestInfo(string guestId)
+        {
+            // Retrieve guest information from the database
+            try
+            {
+                using (SqlConnection con = new SqlConnection("Data Source=ASHRAF\\SQLEXPRESS02;Initial Catalog=\"SubCity Management\";Integrated Security=True;"))
+                {
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand("SELECT * FROM dbo.GuestEntry WHERE ID = @GuestID", con);
+                    cmd.Parameters.AddWithValue("@GuestID", guestId);
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.HasRows)
+                        {
+                            while (reader.Read())
+                            {
+                                string guestInfo = $"Guest ID: {reader["ID"]}\n" +
+                                                   $"Host Name: {reader["Host Name"]}\n" +
+                                                   $"Number of Guests: {reader["Number Of Guest"]}\n" +
+                                                   $"Relation with Host: {reader["Relation With Host"]}\n" +
+                                                   $"Purpose of Visit: {reader["Purpose Of Visit"]}\n" +
+                                                   $"Guest's Name: {reader["Guest's Name"]}\n" +
+                                                   $"Guest Details: {reader["Guest Detail"]}\n" +
+                                                   $"Arrival Time: {reader["Arrival Time"]}\n" +
+                                                   $"Departure Time: {reader["Departure Time"]}\n" +
+                                                   $"Vehicle: {reader["Any Vehicle"]}";
+
+                                MessageBox.Show(guestInfo, "Guest Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("No guest found with the provided ID.", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred while searching for guest information: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void ShowComplaintInfo(string complaintId)
+        {
+            // Retrieve complaint information from the database
+            try
+            {
+                using (SqlConnection con = new SqlConnection("Data Source=ASHRAF\\SQLEXPRESS02;Initial Catalog=\"SubCity Management\";Integrated Security=True;"))
+                {
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand("SELECT * FROM dbo.Complaint WHERE ComplaintID = @ComplaintID", con);
+                    cmd.Parameters.AddWithValue("@ComplaintID", complaintId);
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.HasRows)
+                        {
+                            while (reader.Read())
+                            {
+                                string complaintInfo = $"Complaint ID: {reader["ComplaintID"]}\n" +
+                                                      $"Guest ID: {reader["GuestID"]}\n" +
+                                                      $"Complaint Description: {reader["Description"]}\n" +
+                                                      $"Complaint Status: {reader["Status"]}\n" +
+                                                      $"Date of Complaint: {reader["DateOfComplaint"]}";
+
+                                MessageBox.Show(complaintInfo, "Complaint Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("No complaint found with the provided ID.", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred while searching for complaint information: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void AddB_Click(object sender, EventArgs e)
@@ -98,7 +201,24 @@ namespace Sub_City_Management
 
         private void SearchButton_Click(object sender, EventArgs e)
         {
+            // Trigger the search logic based on the ID entered
+            string searchText = SearchB.Text.Trim();
+            if (!string.IsNullOrEmpty(searchText))
+            {
+                if (int.TryParse(searchText, out _))
+                {
+                    // Show both guest and complaint search options
+                    SearchB_TextChanged(sender, e);
+                }
+                else
+                {
+                    MessageBox.Show("Please enter a valid ID.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
 
+        private void ShowPanel_Paint(object sender, PaintEventArgs e)
+        {
         }
     }
 

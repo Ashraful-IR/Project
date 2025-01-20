@@ -33,6 +33,7 @@
             this.AddB = new System.Windows.Forms.Button();
             this.SearchB = new Guna.UI2.WinForms.Guna2TextBox();
             this.SearchButton = new Guna.UI2.WinForms.Guna2Button();
+            this.ShowPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.SuspendLayout();
             // 
             // panel1
@@ -48,12 +49,15 @@
             // 
             this.AddB.FlatAppearance.BorderSize = 0;
             this.AddB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddB.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.AddB.Image = ((System.Drawing.Image)(resources.GetObject("AddB.Image")));
-            this.AddB.Location = new System.Drawing.Point(675, 12);
+            this.AddB.Location = new System.Drawing.Point(647, 0);
             this.AddB.Name = "AddB";
-            this.AddB.Size = new System.Drawing.Size(44, 44);
+            this.AddB.Size = new System.Drawing.Size(72, 69);
             this.AddB.TabIndex = 208;
+            this.AddB.Text = "Add";
+            this.AddB.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.AddB.UseVisualStyleBackColor = true;
             this.AddB.Click += new System.EventHandler(this.AddB_Click);
             // 
@@ -103,12 +107,22 @@
             this.SearchButton.Text = "Search";
             this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
             // 
+            // ShowPanel
+            // 
+            this.ShowPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.ShowPanel.Location = new System.Drawing.Point(0, 75);
+            this.ShowPanel.Name = "ShowPanel";
+            this.ShowPanel.Size = new System.Drawing.Size(731, 505);
+            this.ShowPanel.TabIndex = 211;
+            this.ShowPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ShowPanel_Paint);
+            // 
             // Status
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(243)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(731, 605);
+            this.Controls.Add(this.ShowPanel);
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.AddB);
             this.Controls.Add(this.SearchB);
@@ -127,5 +141,6 @@
         private System.Windows.Forms.Button AddB;
         private Guna.UI2.WinForms.Guna2TextBox SearchB;
         private Guna.UI2.WinForms.Guna2Button SearchButton;
+        private Guna.UI2.WinForms.Guna2Panel ShowPanel;
     }
 }
