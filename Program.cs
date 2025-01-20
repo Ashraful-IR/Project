@@ -16,7 +16,7 @@ namespace Sub_City_Management
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Complaint());
+            Application.Run(new Form1());
         }
     }
 }
