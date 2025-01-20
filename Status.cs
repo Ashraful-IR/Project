@@ -102,7 +102,7 @@ namespace Sub_City_Management
                 using (SqlConnection con = new SqlConnection("Data Source=ASHRAF\\SQLEXPRESS02;Initial Catalog=\"SubCity Management\";Integrated Security=True;"))
                 {
                     con.Open();
-                    SqlCommand cmd = new SqlCommand("SELECT * FROM dbo.Complaint WHERE ComplaintID = @ComplaintID", con);
+                    SqlCommand cmd = new SqlCommand("SELECT * FROM dbo.Complaintt WHERE ComplaintID = @ComplaintID", con);
                     cmd.Parameters.AddWithValue("@ComplaintID", complaintId);
 
                     using (SqlDataReader reader = cmd.ExecuteReader())
