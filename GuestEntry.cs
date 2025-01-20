@@ -79,5 +79,10 @@ namespace Sub_City_Management
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
