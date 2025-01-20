@@ -95,6 +95,11 @@ namespace Sub_City_Management
         {
             // Any initialization logic if needed
         }
+
+        private void SearchButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
     // GuestEntry class

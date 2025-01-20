@@ -15,27 +15,10 @@ namespace Sub_City_Management
             _dashboard = dashboard; // Store the Dashboard reference
         }
 
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void HomeB_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void ExitB_Click(object sender, EventArgs e)
-        {
-            Form1 form1 = new Form1();
-            form1.Show();
-        }
-
-        private void BackB_Click(object sender, EventArgs e)
-        {
-        }
-
         private void GuestEntry_Load(object sender, EventArgs e)
         {
         }
+
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
@@ -51,26 +34,22 @@ namespace Sub_City_Management
                 // SQL connection and insert operation to store data into GuestEntry table
                 using (SqlConnection con = new SqlConnection("Data Source=ASHRAF\\SQLEXPRESS02;Initial Catalog=\"SubCity Management\";Integrated Security=True;"))
                 {
-
                     con.Open();
 
                     // Generate a unique guest ID
                     SqlCommand idCmd = new SqlCommand("SELECT MAX(ID) FROM dbo.GuestEntry", con); // Ensure the table name is correct
                     object result = idCmd.ExecuteScalar();
                     int newId = result != DBNull.Value ? Convert.ToInt32(result) + 1 : 1; // Start from 1 if no records
-
-                    // Generate a unique guest ID as an integer
+                                                                                          // Generate a unique guest ID as an integer
                     string guestId = newId.ToString(); // Use only the numeric ID
                     string formattedGuestId = "GUEST-" + guestId.PadLeft(5, '0'); // Format as GUEST-00123
 
-
-                    // Now, insert the guest data into the database, including the guest ID
+                    // Insert the guest data into the database, including the guest ID
                     SqlCommand cmd = new SqlCommand(
                         "INSERT INTO dbo.GuestEntry (ID, [Host Name], [Number Of Guest], [Relation With Host], " +
                         "[Purpose Of Visit], [Guest's Name], [Guest Detail], [Arrival Time], [Departure Time], [Any Vehicle]) " +
                         "VALUES (@GuestID, @HostName, @NumberOfGuest, @RelationWithHost, @PurposeOfVisit, @GuestsName, @GuestDetail, @ArrivalTime, @DepartureTime, @AnyVehicle)", con);
 
-                    // Adding parameters to the SQL command
                     cmd.Parameters.AddWithValue("@GuestID", guestId); // Insert formatted guest ID
                     cmd.Parameters.AddWithValue("@HostName", HName.Text);
                     cmd.Parameters.AddWithValue("@NumberOfGuest", int.Parse(NGuest.Text)); // Ensure NGuest.Text is a valid integer
@@ -84,10 +63,10 @@ namespace Sub_City_Management
 
                     // Execute the query
                     cmd.ExecuteNonQuery();
-                }
 
-                // Display success message
-                MessageBox.Show("SUBMITTED");
+                    // Display success message with Guest ID
+                    MessageBox.Show($"SUBMITTED\nGuest ID: {guestId}");
+                }
             }
             catch (SqlException sqlEx)
             {
