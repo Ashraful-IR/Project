@@ -438,7 +438,7 @@
             this.CheckBox.UncheckedState.BorderRadius = 0;
             this.CheckBox.UncheckedState.BorderThickness = 0;
             this.CheckBox.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.CheckBox.CheckedChanged += new System.EventHandler(this.CheckBox_CheckedChanged);
+            //this.CheckBox.CheckedChanged += new System.EventHandler(this.CheckBox_CheckedChanged);
             // 
             // GuestEntry
             // 

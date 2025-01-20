@@ -99,7 +99,7 @@ namespace Sub_City_Management
 
         private void StatusB_Click(object sender, EventArgs e)
         {
-            AddControls(new Status());
+            AddControls(new Status(ControlPanel));
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

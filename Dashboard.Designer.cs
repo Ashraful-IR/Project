@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.ForwardB = new System.Windows.Forms.Button();
             this.HomeB = new System.Windows.Forms.Button();
@@ -44,12 +45,9 @@
             this.GEbutton = new System.Windows.Forms.Button();
             this.ComplaintB = new System.Windows.Forms.Button();
             this.DashB = new System.Windows.Forms.Button();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.ControlPanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.Controlpanel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.ControlPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -75,6 +73,13 @@
             this.panel1.Size = new System.Drawing.Size(175, 605);
             this.panel1.TabIndex = 14;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Location = new System.Drawing.Point(175, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(731, 605);
+            this.guna2Panel1.TabIndex = 16;
             // 
             // label1
             // 
@@ -260,30 +265,13 @@
             this.DashB.UseVisualStyleBackColor = true;
             this.DashB.Click += new System.EventHandler(this.DashB_Click);
             // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.Location = new System.Drawing.Point(175, 0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(731, 605);
-            this.guna2Panel1.TabIndex = 16;
-            // 
             // ControlPanel
             // 
-            this.ControlPanel.Controls.Add(this.Controlpanel1);
             this.ControlPanel.Location = new System.Drawing.Point(175, 0);
             this.ControlPanel.Name = "ControlPanel";
             this.ControlPanel.Size = new System.Drawing.Size(731, 605);
             this.ControlPanel.TabIndex = 15;
             this.ControlPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ControlPanel_Paint);
-            // 
-            // Controlpanel1
-            // 
-            this.Controlpanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Controlpanel1.Location = new System.Drawing.Point(0, 0);
-            this.Controlpanel1.Name = "Controlpanel1";
-            this.Controlpanel1.Size = new System.Drawing.Size(731, 605);
-            this.Controlpanel1.TabIndex = 16;
-            this.Controlpanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Controlpanel1_Paint);
             // 
             // Dashboard
             // 
@@ -301,7 +289,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.ControlPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -325,6 +312,5 @@
         private System.Windows.Forms.Button button1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel ControlPanel;
-        private Guna.UI2.WinForms.Guna2Panel Controlpanel1;
     }
 }

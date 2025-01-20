@@ -94,7 +94,7 @@ namespace Sub_City_Management
             con.Close();
 
             
-            //MessageBox.Show("Welcome to Bashundhara");
+            MessageBox.Show("Welcome to Bashundhara");
 
             /*
             Form3 form3 = new Form3();
